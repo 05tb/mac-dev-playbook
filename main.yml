@@ -2,6 +2,16 @@
 - hosts: all
   connection: local
 
+  # `mas signin` command disabled on macOS >10.13, use pause and manual sign in instead
+  # vars_prompt:
+  # - name: "mas_email"
+  #   prompt: "Enter Apple App Store Account Email"
+  #   private: no
+
+  # - name: "mas_password"
+  #   prompt: "Enter Apple App Store Account Password"
+  #   private: yes
+
   vars_files:
     - default.config.yml
 
@@ -10,6 +20,9 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
+    - name: Mac App Store Sign in
+      pause:  
+        prompt: "Please sign into the Mac App Store - Press Enter when done"
 
   roles:
     - role: geerlingguy.homebrew

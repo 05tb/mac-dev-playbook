@@ -22,6 +22,7 @@ homebrew_installed_packages:
   - bash-completion
   - terraform
   - dockutil
+  - mas
 
 homebrew_taps:
   - homebrew/core
@@ -37,7 +38,7 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - itsycal
-  # - oversight # causing some issues?
+  - oversight # causing some issues?
   - postman
   - pycharm-ce
   - screens-connect
@@ -57,9 +58,21 @@ homebrew_cask_apps:
   - vagrant 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
+mas_installed_apps: 
+  - { id: 497799835, name: "Xcode" }
+  - { id: 1432731683, name: "Adblock Plus" }
+  - { id: 1335413823, name: "Ka-Block!" }
+  - { id: 937984704, name: "Amphetamine" }
+  - { id: 1091189122, name: "Bear" }
+  - { id: 1160374471, name: "PiPifier" }
+  - { id: 1436953057, name: "GhosteryLite" }
+  - { id: 425424353, name: "The Unarchiver" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 409203825, name: "Numbers" }
+# mas_email: ""
+# mas_password: ""
+# mas_signin_dialog: yes
 
 dockitems_to_remove:
   - Launchpad
