@@ -131,6 +131,10 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
   6. Set mouse tracking rate.
   7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
 
+#### Visual Studio Code 
+
+The default dependencies in the following file need to be commented out for it to work on mac `ansible-role-visual-studio-code-extensions/vars/pkg-mgr/default.yml`.
+
 ### Applications/packages to be added:
 
 These are mostly direct download links, some are more difficult to install because of custom installers or other nonstandard install quirks:

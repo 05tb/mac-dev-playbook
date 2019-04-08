@@ -74,6 +74,21 @@ mas_installed_apps:
 # mas_password: ""
 # mas_signin_dialog: yes
 
+vscode_extensions_to_install:
+  - users:
+    - username: toddb
+      visual_studio_code_extensions:
+        - ms-python.python
+        - streetsidesoftware.code-spell-checker
+        - shd101wyy.markdown-preview-enhanced
+        - peterjausovec.vscode-docker
+        - mauve.terraform
+        - jithurjacob.nbpreviewer
+        - eamodio.toggle-excluded-files
+        - eamodio.gitlens
+        - devine-davies.make-hidden
+        - dbaeumer.vscode-eslint
+
 dockitems_to_remove:
   - Launchpad
   - Contacts

@@ -8,4 +8,5 @@ mkdir mac-setup && cd mac-setup
 git clone git@github.com:05tb/mac-dev-playbook.git
 cd mac-dev-playbook
 ansible-galaxy install -r requirements.yml
+sed -i "" 's/- which/# - which/' roles/gantsign.visual-studio-code-extensions/vars/pkg-mgr/default.yml
 ansible-playbook main.yml -i inventory -K

@@ -33,6 +33,9 @@
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
+    - role: gantsign.visual-studio-code-extensions
+      when: vscode_extensions_to_install
+      tags: ['vscode']
 
   tasks:
     - include_tasks: tasks/ansible-setup.yml
