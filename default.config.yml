@@ -36,8 +36,9 @@ homebrew_cask_apps:
   - bbc-iplayer-downloads
   - docker
   - dropbox
-  - firefox
+  # - firefox
   - itsycal
+  - nightowl
   - oversight # causing some issues?
   - postman
   - pycharm-ce
@@ -46,20 +47,19 @@ homebrew_cask_apps:
   - slack
   - superduper
   - texmaker
+  - vagrant 
+  - virtualbox
+  - virtualbox-extension-pack
   - visual-studio-code
   - vlc
   - webex-teams
   - whatsapp
-  - nightowl
   - zenmap
   - zotero
-  - virtualbox
-  - virtualbox-extension-pack
-  - vagrant 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
-  - { id: 497799835, name: "Xcode" }
+  # - { id: 497799835, name: "Xcode" }
   - { id: 1432731683, name: "Adblock Plus" }
   - { id: 1335413823, name: "Ka-Block!" }
   - { id: 937984704, name: "Amphetamine" }
@@ -74,20 +74,20 @@ mas_installed_apps:
 # mas_password: ""
 # mas_signin_dialog: yes
 
-vscode_extensions_to_install:
-  - users:
-    - username: toddb
-      visual_studio_code_extensions:
-        - ms-python.python
-        - streetsidesoftware.code-spell-checker
-        - shd101wyy.markdown-preview-enhanced
-        - peterjausovec.vscode-docker
-        - mauve.terraform
-        - jithurjacob.nbpreviewer
-        - eamodio.toggle-excluded-files
-        - eamodio.gitlens
-        - devine-davies.make-hidden
-        - dbaeumer.vscode-eslint
+# vscode_extensions_to_install:
+users:
+  - username: toddb
+    visual_studio_code_extensions:
+      - ms-python.python
+      - streetsidesoftware.code-spell-checker
+      - shd101wyy.markdown-preview-enhanced
+      - peterjausovec.vscode-docker
+      - mauve.terraform
+      - jithurjacob.nbpreviewer
+      - eamodio.toggle-excluded-files
+      - eamodio.gitlens
+      - devine-davies.make-hidden
+      - dbaeumer.vscode-eslint
 
 dockitems_to_remove:
   - Launchpad
@@ -103,6 +103,7 @@ dockitems_to_remove:
   - iBooks
   - App Store
   - Siri
+  - Skype for Business
 
 dockitems_to_persist:
   - name: Mail
@@ -111,21 +112,24 @@ dockitems_to_persist:
   - name: Slack
     path: "/Applications/Slack.app"
     pos: 2
+  - name: Bear
+    path: "/Applications/Bear.app"
+    pos: 3
   - name: Calendar
     path: /Applications/Calendar.app
-    pos: 3
+    pos: 4
   - name: Safari
     path: /Applications/Safari.app
-    pos: 4
+    pos: 5
   - name: Visual Studio Code
     path: /Applications/Visual Studio Code.app
-    pos: 5
+    pos: 6
   - name: Terminal
     path: /Applications/Utilities/Terminal.app
-    pos: 6
+    pos: 7
   - name: System Preferences
     path: /Applications/System Preferences.app
-    pos: 7
+    pos: 8
 
 osx_script: "~/.osx --no-restart"
 
