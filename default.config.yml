@@ -13,6 +13,7 @@ dotfiles_repo_local_destination: ~/Documents/git-repos/dotfiles
 dotfiles_files:
   - .gitignore
   - .osx
+  - .zshrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -23,6 +24,9 @@ homebrew_installed_packages:
   - terraform
   - dockutil
   - mas
+  - zlib
+  - readline
+  - xz
 
 homebrew_taps:
   - homebrew/core
@@ -88,6 +92,7 @@ users:
       - eamodio.gitlens
       - devine-davies.make-hidden
       - dbaeumer.vscode-eslint
+      - gruntfuggly.todo-tree
 
 dockitems_to_remove:
   - Launchpad
