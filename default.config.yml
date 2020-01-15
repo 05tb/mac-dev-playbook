@@ -20,13 +20,14 @@ homebrew_installed_packages:
   - pyenv 
   - pyenv-virtualenv
   - git 
-  - bash-completion
   - terraform
   - dockutil
   - mas
   - zlib
   - readline
   - xz
+  - zsh 
+  - zsh-completions
 
 homebrew_taps:
   - homebrew/core
@@ -35,22 +36,27 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - 1password6
+  - 1password
   - bartender
   - bbc-iplayer-downloads
   - docker
   - dropbox
   # - firefox
+  - iterm2
   - itsycal
+  - jupyter-notebook-viewer
   - nightowl
   - oversight # causing some issues?
   - postman
   - pycharm-ce
+  - qfinder-pro
+  - rescuetime
   - screens-connect
   - skype-for-business
   - slack
   - superduper
   - texmaker
+  - ultimaker-cura
   - vagrant 
   - virtualbox
   - virtualbox-extension-pack
@@ -59,13 +65,12 @@ homebrew_cask_apps:
   - webex-teams
   - whatsapp
   - zenmap
+  - zoom.us
   - zotero
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
   # - { id: 497799835, name: "Xcode" }
-  - { id: 1432731683, name: "Adblock Plus" }
-  - { id: 1335413823, name: "Ka-Block!" }
   - { id: 937984704, name: "Amphetamine" }
   - { id: 1091189122, name: "Bear" }
   - { id: 1160374471, name: "PiPifier" }
@@ -74,6 +79,10 @@ mas_installed_apps:
   - { id: 409201541, name: "Pages" }
   - { id: 409183694, name: "Keynote" }
   - { id: 409203825, name: "Numbers" }
+  - {id: 1287445660, name: "Agenda"}
+  - {id: 568494494, name: "Pocket"}
+  - {id: 1477385213, name: "Save to Pocket"}
+  - {id: 1440147259, name: "AdGuard for Safari"}
 # mas_email: ""
 # mas_password: ""
 # mas_signin_dialog: yes
@@ -117,8 +126,8 @@ dockitems_to_persist:
   - name: Slack
     path: "/Applications/Slack.app"
     pos: 2
-  - name: Bear
-    path: "/Applications/Bear.app"
+  - name: Agenda
+    path: "/Applications/Agenda.app"
     pos: 3
   - name: Calendar
     path: /Applications/Calendar.app
@@ -126,15 +135,18 @@ dockitems_to_persist:
   - name: Safari
     path: /Applications/Safari.app
     pos: 5
+  - name: iTunes
+    path: /Applications/iTunes.app
+    pos: 6
   - name: Visual Studio Code
     path: /Applications/Visual Studio Code.app
-    pos: 6
-  - name: Terminal
-    path: /Applications/Utilities/Terminal.app
     pos: 7
+  - name: iTerm
+    path: /Applications/Utilities/iTerm.app
+    pos: 8
   - name: System Preferences
     path: /Applications/System Preferences.app
-    pos: 8
+    pos: 9
 
 osx_script: "~/.osx --no-restart"
 
