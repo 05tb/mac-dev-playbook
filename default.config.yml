@@ -9,7 +9,7 @@ configure_dock: yes
 
 dotfiles_repo: https://github.com/05tb/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Documents/git-repos/dotfiles
+dotfiles_repo_local_destination: ~/Documents/git-repos/mac-setup/dotfiles
 dotfiles_files:
   - .gitignore
   - .osx
@@ -20,7 +20,6 @@ homebrew_installed_packages:
   - pyenv 
   - pyenv-virtualenv
   - git 
-  - terraform
   - dockutil
   - mas
   - zlib
@@ -28,6 +27,7 @@ homebrew_installed_packages:
   - xz
   - zsh 
   - zsh-completions
+  - zsh-syntax-highlighting
 
 homebrew_taps:
   - homebrew/core
@@ -36,45 +36,31 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - 1password
+  - airdisplay
+  # - airserver
   - bartender
-  - bbc-iplayer-downloads
-  - docker
+  - box-sync
+  - calibre
   - dropbox
-  # - firefox
+  - firefox
+  # - cat-eye-sync
+  - flux
+  - idrive
   - iterm2
   - itsycal
-  - jupyter-notebook-viewer
-  - nightowl
+  # - logitech-options
+  # - netgear-switch-discovery
   - oversight # causing some issues?
-  - postman
-  - pycharm-ce
-  - qfinder-pro
-  - rescuetime
   - screens-connect
-  - skype-for-business
-  - slack
   - superduper
-  - texmaker
-  - ultimaker-cura
-  - vagrant 
-  - virtualbox
-  - virtualbox-extension-pack
   - visual-studio-code
   - vlc
-  - webex-teams
-  - whatsapp
-  - zenmap
-  - zoom.us
-  - zotero
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
   # - { id: 497799835, name: "Xcode" }
   - { id: 937984704, name: "Amphetamine" }
-  - { id: 1091189122, name: "Bear" }
   - { id: 1160374471, name: "PiPifier" }
-  - { id: 1436953057, name: "GhosteryLite" }
   - { id: 425424353, name: "The Unarchiver" }
   - { id: 409201541, name: "Pages" }
   - { id: 409183694, name: "Keynote" }
@@ -83,6 +69,13 @@ mas_installed_apps:
   - {id: 568494494, name: "Pocket"}
   - {id: 1477385213, name: "Save to Pocket"}
   - {id: 1440147259, name: "AdGuard for Safari"}
+  - {id: 727593140, name: "VPN Unlimited - WiFi Proxy"}
+  - {id: 577085396, name: "Unclutter"}
+  - {id: 441258766, name: "Magnet"}
+  # - {id: 824171161, name: "Affinity Designer"}
+  - {id: 736189492, name: "Notability"}
+  - {id: 700586016, name: "Qfinder by QNAP"}
+  - {id: 1147396723, name: "WhatsApp Desktop"}
 # mas_email: ""
 # mas_password: ""
 # mas_signin_dialog: yes
@@ -94,7 +87,7 @@ users:
       - ms-python.python
       - streetsidesoftware.code-spell-checker
       - shd101wyy.markdown-preview-enhanced
-      - peterjausovec.vscode-docker
+      # - peterjausovec.vscode-docker
       - mauve.terraform
       - jithurjacob.nbpreviewer
       - eamodio.toggle-excluded-files
@@ -106,28 +99,23 @@ users:
 dockitems_to_remove:
   - Launchpad
   - Contacts
-  - Notes
   - Reminders
   - Maps
   - Photos
-  - Messages
   - FaceTime
-  - News
-  - iTunes
   - iBooks
   - App Store
   - Siri
-  - Skype for Business
 
 dockitems_to_persist:
   - name: Mail
     path: "/Applications/Mail.app"
     pos: 1
-  - name: Slack
-    path: "/Applications/Slack.app"
+  - name: Messages
+    path: "/Applications/Messages.app"
     pos: 2
-  - name: Agenda
-    path: "/Applications/Agenda.app"
+  - name: Notes
+    path: "/Applications/Notes.app"
     pos: 3
   - name: Calendar
     path: /Applications/Calendar.app
