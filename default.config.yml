@@ -1,6 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
+# configure_oh_my_zsh: yes
 configure_dotfiles: yes
 configure_sudoers: yes
 configure_terminal: yes
@@ -28,6 +29,8 @@ homebrew_installed_packages:
   - xz
   - zsh 
   - zsh-completions
+  - zsh-syntax-highlighting
+  - diff-pdf
 
 homebrew_taps:
   - homebrew/core
@@ -36,24 +39,26 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - 1password
+  - arduino
   - bartender
-  - bbc-iplayer-downloads
+  - bibdesk
   - docker
   - dropbox
-  # - firefox
+  - duet
+  - handbreak
   - iterm2
   - itsycal
   - jupyter-notebook-viewer
-  - nightowl
-  - oversight # causing some issues?
+  - mactex
+  - monitorcontrol
+  - parsec
   - postman
   - pycharm-ce
   - qfinder-pro
   - rescuetime
   - screens-connect
-  - skype-for-business
   - slack
+  - spotify
   - superduper
   - texmaker
   - ultimaker-cura
@@ -62,27 +67,36 @@ homebrew_cask_apps:
   - virtualbox-extension-pack
   - visual-studio-code
   - vlc
-  - webex-teams
   - whatsapp
   - zenmap
   - zoom.us
   - zotero
+  - microsoft-excel
+  - microsoft-powerpoint
+  - microsoft-word
+  - microsoft-teams
+  - microsoft-office
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
-  # - { id: 497799835, name: "Xcode" }
+  - { id: 1333542190, name: "1Password 7" }
+  - { id: 1440147259, name: "AdGuard for Safari" }
+  - { id: 824171161, name: "Affinity Designer" } 
+  - { id: 1287445660, name: "Agenda" }
   - { id: 937984704, name: "Amphetamine" }
   - { id: 1091189122, name: "Bear" }
-  - { id: 1160374471, name: "PiPifier" }
-  - { id: 1436953057, name: "GhosteryLite" }
-  - { id: 425424353, name: "The Unarchiver" }
-  - { id: 409201541, name: "Pages" }
+  - { id: 408981434, name: "iMovie" }
   - { id: 409183694, name: "Keynote" }
+  - { id: 441258766, name: "Magnet" }
   - { id: 409203825, name: "Numbers" }
-  - {id: 1287445660, name: "Agenda"}
-  - {id: 568494494, name: "Pocket"}
-  - {id: 1477385213, name: "Save to Pocket"}
-  - {id: 1440147259, name: "AdGuard for Safari"}
+  - { id: 409201541, name: "Pages" }
+  - { id: 1160374471, name: "PiPifier" }
+  - { id: 568494494, name: "Pocket" }
+  - { id: 1477385213, name: "Save to Pocket" }
+  - { id: 425424353, name: "The Unarchiver" }
+  - { id: 577085396, name: "Unclutter" }
+    # - { id: 497799835, name: "Xcode" }
+
 # mas_email: ""
 # mas_password: ""
 # mas_signin_dialog: yes
@@ -94,14 +108,18 @@ users:
       - ms-python.python
       - streetsidesoftware.code-spell-checker
       - shd101wyy.markdown-preview-enhanced
-      - peterjausovec.vscode-docker
-      - mauve.terraform
+      - ms-azuretools.vscode-docker
       - jithurjacob.nbpreviewer
       - eamodio.toggle-excluded-files
       - eamodio.gitlens
       - devine-davies.make-hidden
       - dbaeumer.vscode-eslint
       - gruntfuggly.todo-tree
+      - hashicorp.terraform
+      - ms-vsliveshare.vsliveshare
+      - pkief.material-icon-theme
+      - mohsen1.prettify-json
+      - jithurjacob.nbpreviewer
 
 dockitems_to_remove:
   - Launchpad
@@ -117,36 +135,38 @@ dockitems_to_remove:
   - iBooks
   - App Store
   - Siri
-  - Skype for Business
 
 dockitems_to_persist:
+  - name: Zoom
+    path: "/Applications/Zoom.app"
+    pos: 1
   - name: Mail
     path: "/Applications/Mail.app"
-    pos: 1
+    pos: 2
   - name: Slack
     path: "/Applications/Slack.app"
-    pos: 2
-  - name: Agenda
-    path: "/Applications/Agenda.app"
     pos: 3
   - name: Calendar
     path: /Applications/Calendar.app
     pos: 4
+  - name: Agenda
+    path: "/Applications/Agenda.app"
+    pos: 5
   - name: Safari
     path: /Applications/Safari.app
-    pos: 5
-  - name: iTunes
-    path: /Applications/iTunes.app
     pos: 6
+  - name: Music
+    path: /Applications/Music.app
+    pos: 7
   - name: Visual Studio Code
     path: /Applications/Visual Studio Code.app
-    pos: 7
+    pos: 8
   - name: iTerm
     path: /Applications/Utilities/iTerm.app
-    pos: 8
+    pos: 9
   - name: System Preferences
     path: /Applications/System Preferences.app
-    pos: 9
+    pos: 10
 
 osx_script: "~/.osx --no-restart"
 

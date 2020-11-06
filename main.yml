@@ -42,6 +42,9 @@
     - include_tasks: tasks/sudoers.yml
       when: configure_sudoers
 
+    # - include_tasks: tasks/oh-my-zsh.yml
+    #   when: configure_oh_my_zsh
+
     - include_tasks: tasks/terminal.yml
       when: configure_terminal
 

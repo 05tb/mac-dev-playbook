@@ -117,6 +117,27 @@ My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into t
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
+Uninstalled apps:
+  - audacity
+  - cateye sync
+  - logitech firmware updater
+  - logitech options
+  - logitech capture
+  - NETGEAR Switch Discovery Tool
+  - Olympus Workspace
+  - Lumix Tether 
+  - Lumix Webcam
+  - Creative Cloud
+
+Safari Extension:
+  - 1Password
+  - Adguard 
+  - Pipifier
+  - Pocket
+
+Other:
+  - oh-my-zsh
+
 ## Future additions
 
 ### Things that still need to be done manually
