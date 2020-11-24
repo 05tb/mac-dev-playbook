@@ -31,6 +31,8 @@ homebrew_installed_packages:
   - zsh-completions
   - zsh-syntax-highlighting
   - diff-pdf
+  - node
+  - nvm
 
 homebrew_taps:
   - homebrew/core
@@ -43,9 +45,8 @@ homebrew_cask_apps:
   - bartender
   - bibdesk
   - docker
-  - dropbox
+  # - dropbox
   - duet
-  - handbreak
   - iterm2
   - itsycal
   - jupyter-notebook-viewer
@@ -53,29 +54,27 @@ homebrew_cask_apps:
   - monitorcontrol
   - parsec
   - postman
-  - pycharm-ce
   - qfinder-pro
   - rescuetime
   - screens-connect
-  - slack
+  # - slack
   - spotify
   - superduper
   - texmaker
   - ultimaker-cura
   - vagrant 
-  - virtualbox
-  - virtualbox-extension-pack
+  # - virtualbox
+  # - virtualbox-extension-pack
   - visual-studio-code
   - vlc
-  - whatsapp
+  - xquartz
   - zenmap
-  - zoom.us
+  - zoomus
   - zotero
   - microsoft-excel
   - microsoft-powerpoint
   - microsoft-word
   - microsoft-teams
-  - microsoft-office
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
@@ -93,7 +92,6 @@ mas_installed_apps:
   - { id: 1160374471, name: "PiPifier" }
   - { id: 568494494, name: "Pocket" }
   - { id: 1477385213, name: "Save to Pocket" }
-  - { id: 425424353, name: "The Unarchiver" }
   - { id: 577085396, name: "Unclutter" }
     # - { id: 497799835, name: "Xcode" }
 
@@ -135,10 +133,12 @@ dockitems_to_remove:
   - iBooks
   - App Store
   - Siri
+  - TV
+  - Podcasts
 
 dockitems_to_persist:
-  - name: Zoom
-    path: "/Applications/Zoom.app"
+  - name: Zoom.us
+    path: "/Applications/Zoom.us.app"
     pos: 1
   - name: Mail
     path: "/Applications/Mail.app"
@@ -162,7 +162,7 @@ dockitems_to_persist:
     path: /Applications/Visual Studio Code.app
     pos: 8
   - name: iTerm
-    path: /Applications/Utilities/iTerm.app
+    path: /Applications/iTerm.app
     pos: 9
   - name: System Preferences
     path: /Applications/System Preferences.app
